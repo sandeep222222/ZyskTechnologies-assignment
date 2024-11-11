@@ -1,0 +1,40 @@
+.mainContainer { 
+    padding: 4rem 1rem;
+    background-color: #F9FAFB;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 2rem; 
+}
+
+.mainContainer h2 {
+    width: 100%;  
+    max-width: 71rem; 
+    font-size: clamp(2rem, 6vw, 3rem); 
+    margin: auto;
+    font-weight: 500;
+    line-height: clamp(2rem, 7vw, 3.75rem);  
+    letter-spacing: -0.02em;
+    text-align: center; 
+}
+
+.managerTitle {  
+    font-size: clamp(1rem, 3vw, 1.125rem); 
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0rem;
+}
+
+ 
+.managerContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 0.5rem; 
+}
+
+.managerContainer img {
+    width: 4rem; 
+    height: 4rem; 
+}

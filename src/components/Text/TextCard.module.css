@@ -1,0 +1,59 @@
+.cardContainer{
+    width: 23rem;
+    height: 11.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardContainerLearnMore{
+    width: 23rem;
+    height: 15.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardContainer img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.cardTitle { 
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+
+.cardSubText{ 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475467;
+    margin: 0.75rem 0.5rem 0rem 0.5rem;
+}
+
+.cardLearnMore{
+    height: 1.5rem;
+    width: 7.15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    color: #6941C6;
+}
+
+.cardLearnMore span { 
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.cardLearnMore img{
+    height: 0.9rem;
+    width: 0.9rem;
+}

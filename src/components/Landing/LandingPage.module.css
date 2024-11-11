@@ -1,0 +1,204 @@
+.heroContext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 3.5rem;
+}
+
+.heroImageSmall{
+    display: none;
+}
+
+.heroImageLarge{ 
+        max-width: 90%;
+        margin: auto;
+        height: auto;
+        display: block;
+}
+
+.newFeatureContainer {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    padding: 4px 10px; 
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border: 1px solid #D6BBFB;
+    background-color: #F9F5FF;
+    color: #6941C6;
+    font-size: clamp(12px, 2.5vw, 14px); 
+    font-weight: 500;
+    line-height: 1.5rem;
+    cursor: pointer;
+    margin: 0 auto; 
+}
+
+.newFeature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: auto; 
+    padding: 1px 10px; 
+    border: 1px solid #D6BBFB;
+    border-radius: 1rem;
+    background-color: white;
+    color: #6941C6;
+}
+
+.newFeatureContainer span { 
+    flex-grow: 1; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.newFeatureContainer img { 
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.heroMainText h1 {
+    font-size: clamp(2rem, 6vw, 60px);  
+    font-weight: 600;
+    line-height: clamp(2.5rem, 7vw, 72px); 
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .heroSubText {
+    line-height: clamp(1.5rem, 5vw, 1.875rem); 
+    color: #475467;
+    width: 100%;  
+    max-width: 48rem; 
+    margin-bottom: 3.5rem;
+  }
+  
+  .heroSubText p {
+    font-size: clamp(1rem, 3.5vw, 1.25rem); 
+    font-weight: 400;
+    text-align: center;
+  }
+
+.demoAndSignUpContainer {
+    display: flex;
+    width: 100%; 
+    max-width: 17rem; 
+    justify-content: space-between;
+}
+
+.demoAndSignUpContainer Button {
+    width: fit-content;  
+    height: 3.75rem;
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    font-family: inherit;
+    text-transform: capitalize;
+}
+
+.demoAndSignUpContainer Button span {
+    display: flex;
+    align-items: center;
+}
+
+.demoAndSignUpContainer Button span img {
+    margin-right: 0.5rem;
+}
+
+
+.heroTestimonialsContainer {
+    height: auto; 
+    padding: 6rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroTestimonialsContainer p {
+    color: #475467;
+    margin-bottom: 2.5rem;
+}
+
+.heroTestimonialsLogos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+    max-width: 76rem;  
+}
+
+.heroTestimonialsLogos div {
+    flex: 1 1 14.1%;
+    display: flex;
+    justify-content: center; 
+    margin-left:1rem;
+    margin-bottom: 1rem; 
+}
+
+
+ 
+@media (max-width: 480px) {
+    
+    .heroSubText {
+        margin-bottom: 2rem;
+      }
+
+      .heroSubText p{
+        margin: 0rem 1rem;
+      }
+
+    .demoAndSignUpContainer {
+      flex-direction: column-reverse; 
+      gap: 0.7rem;
+      width: 90%; 
+      max-width: 100%; 
+      align-items: stretch;
+      margin: auto;
+      
+    }
+  
+    .demoAndSignUpContainer Button {
+      width: 100%; 
+    }
+
+    .heroImageLarge{ 
+        display: none;
+    }
+
+    .heroImageSmall{
+        display: block;
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .heroTestimonialsLogos {
+        justify-content: center; 
+    }
+
+    .heroTestimonialsLogos div {
+        margin-left:0rem;
+        flex: 1 1 50%; 
+        max-width: 50%; 
+    }
+
+    .heroTestimonialsLogos img {
+        width: 70%;
+    }
+
+    .heroTestimonialsContainer { 
+        padding: 3rem 0rem 4rem 0rem;
+    }
+}
+ 
+ 

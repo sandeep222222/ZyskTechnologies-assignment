@@ -1,0 +1,137 @@
+/* General styles */
+.mainContainer {
+    margin: auto;
+    padding: 6rem 1rem;
+}
+
+/* Flex direction changes for smaller screens */
+.topTextContainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%; /* Full width on small screens */
+    max-width: 71rem; /* Set a max-width for larger screens */
+    margin: auto;
+}
+
+
+.topTextContainerLeft h2 {
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+    font-weight: 600;
+    line-height: clamp(2.25rem, 6vw, 2.75rem);
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.subHeading {
+    width: 100%;
+    max-width: 768px;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-weight: 400;
+    line-height: clamp(1.5rem, 5vw, 1.875rem);
+    color: #475467;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.ourBlog {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    font-weight: 600;
+    line-height: clamp(1.25rem, 3vw, 1.5rem);
+    color: #6941C6;
+}
+
+/* View All Button (for larger screens) */
+.viewAllButton {
+    display: block;
+}
+
+.viewAllButton Button {
+    width: clamp(7rem, 20vw, 9.1rem);
+    height: clamp(2.5rem, 7vw, 3rem);
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    opacity: 1;
+    color: white;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: 600;
+    text-align: center; 
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* View All Button for Mobile (hidden by default) */
+.viewAllButtonMobile {
+    display: none;
+}
+
+/* Card Grid */
+.cardGrid {
+    display: flex;
+    width: 92.5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.25rem;
+    padding: 1rem;
+    margin-top: 2.7rem;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    /* For smaller screens */
+    .mainContainer {
+        padding: 4rem 1rem;
+    }
+
+    .ourBlog {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .topTextContainerLeft h2 {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .subHeading {
+        font-size: 1rem;
+        width: 90%;
+        margin:0rem;
+        margin-bottom: 2rem;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .topTextContainer {
+        display: flex;
+        flex-direction: column; /* Stack content vertically on small screens */
+        align-items: center; /* Center elements */
+        text-align: center;
+    }
+
+    .viewAllButton {
+        display: none; /* Hide the large-screen button */
+    }
+
+    .viewAllButtonMobile {
+        display: block;
+    }
+
+    .viewAllButtonMobile Button { 
+        padding: 0.5rem;
+        width: 100%;
+        margin-top: 2rem;
+        font-weight: 600;
+        border-radius: 8px;
+    }
+
+    .cardGrid {
+        padding: 0rem;
+    }
+     
+}

@@ -1,0 +1,105 @@
+.mainContainer {
+    padding: 6rem 1rem; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.mainContainer h2 {
+    font-size: clamp(2rem, 6vw, 2.25rem); 
+    font-weight: 600;
+    line-height: clamp(2.5rem, 7vw, 2.75rem); 
+    text-align: center; 
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem; 
+}
+
+.subHeading {
+    margin: auto;
+    width: 100%; 
+    max-width: 768px; 
+    font-size: clamp(1rem, 3.5vw, 1.25rem); 
+    font-weight: 400;
+    line-height: clamp(1.5rem, 5vw, 1.875rem); 
+    color: #475467; 
+    text-align: center; 
+    margin-bottom: 4rem;
+}
+
+.featuresPill{
+    margin: auto;
+    width: 5.1875rem;
+    height: 1.75rem;
+    padding: 0.25rem 0.75rem; 
+    border-radius: 1rem;
+    border: 1px solid #E9D7FE;
+    color: #6941C6;
+    background-color:#F9F5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.7rem;
+}
+
+.featuresPill p {
+    margin: 0rem;
+    color: #6941C6;
+    font-weight: '600';
+}
+
+.CuttingEdgeDevicesLarge{
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    display: block;
+}
+
+.CuttingEdgeDevicesSmall{
+    display: none;
+}
+
+.cardGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0rem 2rem;
+    margin-top: 5.7rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .CuttingEdgeDevicesLarge{
+        display: none;
+    }
+    
+    .CuttingEdgeDevicesSmall{
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+        display: block;
+    }
+    .mainContainer {
+        padding: 4rem 1rem; 
+    }
+
+    .mainContainer h2 {
+        font-size: 1.5rem; 
+    }
+
+    .subHeading {
+        font-size: 1rem; 
+        width: 90%; 
+        margin-bottom: 2rem;
+    }
+
+    .featuresPill{
+        margin-bottom: 1rem;
+    }
+
+    .cardGrid{
+        margin-top: 3.25rem;
+    }
+}
